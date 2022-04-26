@@ -1,0 +1,247 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: gray;
+
+}
+
+body .bg {
+    position: relative;
+    width: 95%;
+    height: 92vh;
+    background-color: rgb(19, 7, 7);
+    margin-top: 25px;
+}
+
+.logo {
+    color: white;
+}
+
+ul {
+    list-style-type: none;
+
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    margin-right: 20px;
+}
+
+li {
+    display: inline-block;
+
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+}
+
+button[type="submit"] {
+    padding: 7px;
+    width: 90px;
+    background: linear-gradient(to right, red, rgb(182, 67, 86), yellow);
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+    color: white;
+}
+
+
+section {
+    color: white;
+    text-align: center;
+    margin-top: 90px;
+}
+
+.log-in {
+    margin-bottom: 15px;
+}
+
+
+.choose {
+    color: grey;
+    margin-bottom: 30px;
+}
+
+.textarea {
+    display: flex;
+    color: white;
+    justify-content: space-between;
+    align-items: center;
+    /* width: 100%; */
+}
+
+.left-input {
+    flex: 50%;
+}
+
+.right-input {
+    flex: 50%;
+}
+
+.fb {
+    /* border: 2px solid red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+span {
+    position: absolute;
+    left: 33%;
+    margin-top: 8px;
+    font-size: 5px;
+    color: gray;
+
+}
+
+.fa-brands {
+    position: absolute;
+    right: 20%;
+    margin-top: 4px;
+
+}
+
+input[type="text"] {
+    padding: 8px;
+    border: none;
+    border-radius: 4px;
+    margin: 5px;
+    background-color: rgb(29, 28, 28);
+    outline: none;
+    color: white;
+}
+
+input[type="login"] {
+    padding: 8px;
+    border: none;
+    border-radius: 4px;
+    margin: 5px;
+    background: linear-gradient(to right, red, rgb(182, 67, 86), yellow);
+    outline: none;
+    color: white;
+}
+
+input[type="sign"] {
+    /* width: 85%; */
+    padding: 8px;
+    border: 1px solid rgb(61, 34, 16);
+    border-radius: 4px;
+    margin: 5px;
+    background: black;
+    outline: none;
+    color: white;
+    cursor: pointer;
+}
+
+
+::placeholder {
+    color: rgb(180, 175, 175);
+    font-size: 10px;
+    padding-left: 10px;
+}
+
+.forget {
+    font-size: 10px;
+    margin-top: 15px;
+}
+
+.foot {
+    color: rgb(119, 110, 110);
+    font-weight: lighter;
+    display: flex;
+    justify-content: space-between;
+    margin-right: 40px;
+    margin-left: 40px;
+    margin-top: 15%;
+
+}
+
+/* media-query */
+
+@media (min-width:830px) {
+    .textarea {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 50%;
+        margin: 0 auto;
+    }
+
+    .foot {
+        margin-top: 11%;
+    }
+
+    .material-icons {
+        position: absolute;
+        left: 43%;
+        margin-top: 8px;
+        font-size: 9px;
+        color: gray;
+    }
+}
+
+@media (max-width:567px) {
+    .textarea {
+        display: flex;
+        flex-direction: column;
+    }
+
+    nav ul {
+        display: none;
+    }
+
+    nav {
+        justify-content: space-between;
+    }
+
+    input[type="text"] {
+        padding: 8px;
+        border: none;
+        border-radius: 4px;
+        margin: 5px;
+        background-color: rgb(29, 28, 28);
+        outline: none;
+    }
+
+    input[type="login"] {
+        padding: 8px;
+        /* width: 85%; */
+        border: none;
+        border-radius: 4px;
+        margin: 5px;
+        background: linear-gradient(to right, red, rgb(182, 67, 86), yellow);
+        outline: none;
+    }
+
+    input[type="sign"] {
+        padding: 8px;
+        /* width: 70%; */
+        border: 1px solid rgb(61, 34, 16);
+        border-radius: 4px;
+        margin: 5px;
+        background: black;
+        outline: none;
+    }
+
+    .material-icons {
+        position: absolute;
+        left: 70%;
+        margin-top: 8px;
+        font-size: 10px;
+        color: gray;
+    }
+}
